@@ -33,22 +33,23 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Portfolio</h1>
+        <h1 className='App_title'>PORTFOLIO</h1>
         <div className="header_buttons">
-          <ButtonHome
+          <ButtonHome 
             isActive={isHomeButtonActive}
             onClick={handleHomeButtonClick}
           />
-          <ButtonAbout
+          <ButtonAbout 
             isActive={isAboutButtonActive}
             onClick={handleAboutButtonClick}
           />
-          <ButtonPhotos
+          <ButtonPhotos 
             isActive={isPhotosButtonActive}
             onClick={handlePhotosButtonClick}
           />
         </div>
       </header>
+      <body>
       <div>
         {isHomeButtonActive && <p>casinha</p>}
         {isAboutButtonActive && <p>sobrenos</p>}
@@ -56,7 +57,9 @@ function App() {
       </div>
 
       <p>Portfólio de fotografia</p>
+      </body>
     </div>
+    
   );
 }
 

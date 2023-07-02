@@ -1,61 +1,102 @@
+
+
+
+
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
-  background-color: #858991;
-  min-height: 100vh;
+  background-color: transparent;
+  min-height: 0;
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(0, 0, 0);
+ 
+}
+.App_title{
+  font-family: "Gill Sans", sans-serif;
+  font-size: 48px;
+  font-weight: 750;
+  letter-spacing: 3px;
+  color: #040404;
+  text-shadow: 2px 2px 4px rgba(88, 87, 87, 0.3);
 }
 
-.header_buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.raise:hover,
+.raise:focus {
+  box-shadow: 4px 6px 6px  rgba(0, 0, 0, 1) var(--hover);
+  transform: translateY(-0.25em);
 }
 
 .header_buttons button {
-  
+  /* Existing button styles */
   background-color: transparent;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 6px 5px rgba(181, 180, 180, 0.6);
+  text-shadow: 2px 2px 4px rgba(88, 87, 87, 0.3);
   width: 200px;
   height: 50px;
+  font-family: "Gill Sans", sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #040404;
   padding: 10px 20px;
   font-size: 16px;
-  margin-right: 100px;
-  margin-left: 100px;
-  border: none;
+  margin-right: 60px;
+  margin-left: 60px;
+  border: 0.5px solid rgba(72, 71, 71, 0.6);
   border-radius: 8px;
-
-  /* Add any other button styles as needed */
+  position: relative;
+  overflow: hidden;
 }
 
+.header_buttons button.clicked {
+  /* Button styles when clicked */
+  color: #fff; /* Change text color to white */
+}
 
+.header_buttons button::after {
+  /* Overlay styles */
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: transform 0.5s ease-in;
+  mix-blend-mode: difference;
+  background: radial-gradient(circle at center, #000 24%, #000 25%, #000 100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.header_buttons button.clicked::after {
+  /* Overlay styles when button is clicked */
+  opacity: 1;
+  transform: scale(4.2);
+}
+
+.header_buttons button.clicked:hover::after,
+.header_buttons button.clicked:focus::after {
+  /* Overlay styles when button is clicked and hovered or focused */
+  transform: scale(4.2);
+}
+
+.header_buttons button:not(.clicked):hover,
+.header_buttons button:not(.clicked):focus {
+  /* Button styles when not clicked but hovered or focused */
+  box-shadow: 4px 3px 0.5em -0.4em rgba(0, 0, 0, 0.3);
+  transform: translateY(-0.25em);
+}
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+

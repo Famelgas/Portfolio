@@ -1,30 +1,38 @@
 import React from "react";
 
 
-export  function ButtonHome({ isActive, onClick }) {
+export function ButtonHome({ isActive, onClick }) {
   return (
-    <button onClick={onClick}>
-      {isActive ? "Active" : "Inactive"} Home
+    <button
+      onClick={onClick}
+      className={`raise${isActive ? ' clicked' : ''}`}
+    >
+      Home
     </button>
   );
 }
 
-export   function ButtonAbout({ isActive, onClick }) {
+export function ButtonAbout({ isActive, onClick }) {
   return (
-    <button onClick={onClick}>
-      {isActive ? "Active" : "Inactive"} About
+    <button
+      onClick={onClick}
+      className={`raise${isActive ? ' clicked' : ''}`}
+    >
+      About
     </button>
   );
 }
 
-export   function ButtonPhotos({ isActive, onClick }) {
+export function ButtonPhotos({ isActive, onClick }) {
   return (
-    <button onClick={onClick}>
-      {isActive ? "Active" : "Inactive"} Photos
+    <button
+      onClick={onClick}
+      className={`raise${isActive ? ' clicked' : ''}`}
+    >
+      Photos
     </button>
   );
 }
-
 
 
 
