@@ -56,6 +56,11 @@ function App() {
         {isPhotosButtonActive && <p>fototeta</p>}
       </div>
 
+      <div>
+        <grid/> 
+      </div>
+
+
       <p>Portfólio de fotografia</p>
       </body>
     </div>
