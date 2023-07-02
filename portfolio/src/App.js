@@ -32,32 +32,38 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className='App_title'>PORTFOLIO</h1>
-        <div className="header_buttons">
-          <ButtonHome 
-            isActive={isHomeButtonActive}
-            onClick={handleHomeButtonClick}
-          />
-          <ButtonAbout 
-            isActive={isAboutButtonActive}
-            onClick={handleAboutButtonClick}
-          />
-          <ButtonPhotos 
-            isActive={isPhotosButtonActive}
-            onClick={handlePhotosButtonClick}
-          />
-        </div>
-      </header>
-      <body>
-      <div>
-        {isHomeButtonActive && <p>casinha</p>}
-        {isAboutButtonActive && <p>sobrenos</p>}
-        {isPhotosButtonActive && <p>fototeta</p>}
-      </div>
+        <header className="App-header">
+            <h1 className='App_title'>PORTFOLIO</h1>
+            <div className="header_buttons">
+                <ButtonHome 
+                isActive={isHomeButtonActive}
+                onClick={handleHomeButtonClick}
+                />
+                <ButtonAbout 
+                isActive={isAboutButtonActive}
+                onClick={handleAboutButtonClick}
+                />
+                <ButtonPhotos 
+                isActive={isPhotosButtonActive}
+                onClick={handlePhotosButtonClick}
+                />
+            </div>
+        </header>
+        <body>
+            <div>
+                {isHomeButtonActive && <p>casinha</p>}
+                {isAboutButtonActive && <p>sobrenos</p>}
+                {isPhotosButtonActive && <p>fototeta</p>}
+            </div>
+            <p>Portfólio de fotografia</p>
+            
+            <div className="container">
+                <div class="item item-1">1</div>
+                <div class="item item-2">2</div>
+                <div class="item item-3">3</div>
+            </div>
 
-      <p>Portfólio de fotografia</p>
-      </body>
+        </body>
     </div>
     
   );
