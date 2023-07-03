@@ -4,10 +4,13 @@ import {ButtonHome} from './components/Header.js'
 import {ButtonAbout} from './components/Header.js'
 import {ButtonPhotos} from './components/Header.js'
 import React, { useState } from "react";
-import './components/core.js'
+import './components/Image.js'
 import './App.css';
 
-function App() {
+import Grid1 from './components/Grid1.js';
+import Grid2 from './components/Grid2.js';
+
+function App(props) {
   const [isHomeButtonActive, setIsHomeButtonActive] = useState(false);
   const [isAboutButtonActive, setIsAboutButtonActive] = useState(false);
   const [isPhotosButtonActive, setIsPhotosButtonActive] = useState(false);
@@ -57,11 +60,8 @@ function App() {
             </div>
             <p>Portfólio de fotografia</p>
             
-            <div className="container">
-                <div class="item item-1">1</div>
-                <div class="item item-2">2</div>
-                <div class="item item-3">3</div>
-            </div>
+            <Grid1 />
+            
 
         </body>
     </div>
