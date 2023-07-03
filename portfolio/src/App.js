@@ -1,11 +1,12 @@
-import logo from './components/logo.svg';
 
+import { About } from './components/core.js';
 import {ButtonHome} from './components/Header.js'
 import {ButtonAbout} from './components/Header.js'
 import {ButtonPhotos} from './components/Header.js'
 import React, { useState } from "react";
 import './components/core.js'
 import './App.css';
+import './Core.css'
 
 function App() {
   const [isHomeButtonActive, setIsHomeButtonActive] = useState(false);
@@ -52,16 +53,16 @@ function App() {
         <body>
             <div>
                 {isHomeButtonActive && <p>casinha</p>}
-                {isAboutButtonActive && <p>sobrenos</p>}
-                {isPhotosButtonActive && <p>fototeta</p>}
-            </div>
-            <p>Portfólio de fotografia</p>
-            
-            <div className="container">
+                {isAboutButtonActive && <About/>}
+                {isPhotosButtonActive &&  <div className="container">
                 <div class="item item-1">1</div>
                 <div class="item item-2">2</div>
                 <div class="item item-3">3</div>
+            </div>}
             </div>
+            
+            
+          
 
         </body>
     </div>
