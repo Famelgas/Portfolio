@@ -1,11 +1,12 @@
-import logo from './components/logo.svg';
 
+import { About } from './components/core.js';
 import {ButtonHome} from './components/Header.js'
 import {ButtonAbout} from './components/Header.js'
 import {ButtonPhotos} from './components/Header.js'
 import React, { useState } from "react";
 import './components/Image.js'
 import './App.css';
+import './Core.css'
 
 import Grid1 from './components/Grid1.js';
 import Grid2 from './components/Grid2.js';
@@ -53,15 +54,21 @@ function App(props) {
             </div>
         </header>
         <body>
+
+            <Grid1/>
+
             <div>
                 {isHomeButtonActive && <p>casinha</p>}
-                {isAboutButtonActive && <p>sobrenos</p>}
-                {isPhotosButtonActive && <p>fototeta</p>}
+                {isAboutButtonActive && <About/>}
+                {isPhotosButtonActive &&  <div className="container">
+                <div class="item item-1">1</div>
+                <div class="item item-2">2</div>
+                <div class="item item-3">3</div>
+            </div>}
             </div>
-            <p>Portfólio de fotografia</p>
             
-            <Grid1 />
             
+          
 
         </body>
     </div>
