@@ -1,5 +1,5 @@
 
-import { About } from './components/core.js';
+import About from './components/core.js';
 import {ButtonHome} from './components/Header.js'
 import {ButtonAbout} from './components/Header.js'
 import {ButtonPhotos} from './components/Header.js'
@@ -55,16 +55,12 @@ function App(props) {
         </header>
         <body>
 
-            <Grid1/>
+           
 
             <div>
                 {isHomeButtonActive && <p>casinha</p>}
                 {isAboutButtonActive && <About/>}
-                {isPhotosButtonActive &&  <div className="container">
-                <div class="item item-1">1</div>
-                <div class="item item-2">2</div>
-                <div class="item item-3">3</div>
-            </div>}
+                {isPhotosButtonActive &&  <Grid1/>}
             </div>
             
             

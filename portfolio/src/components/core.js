@@ -1,10 +1,13 @@
 /* onde se vai inserir codigo da grid entre outras coisas do site*/
 
 import React, { useEffect, useState } from "react";
-import "./../Core.css"
+import "../Core.css"
 
 
-export function About() {
+import Image from "./Image.js"
+
+
+function About() {
   const [typedText, setTypedText] = useState("");
   const [showLoading, setShowLoading] = useState(false);
   const originalText =
@@ -26,7 +29,7 @@ export function About() {
       });
 
       if (currentIndex < originalText.length) {
-        setTimeout(addNextCharacter, 50);
+        setTimeout(addNextCharacter, 5);
       }
     };
 
@@ -38,23 +41,25 @@ export function About() {
   }, []);
 
   return (
-    <div className="terminal">
-      <p className="text-body">
-        {typedText}
-        <span className="cursor">_</span>
-      </p>
-      {showLoading && (
-        <div className="loading-container">
-          <h1 className="loading-title">GITHUB</h1>
-          <img
-            className="loading-logo"
-            src="../github-mark-white.png"
-            alt="Logo"
-          />
-        </div>
-      )}
-    </div>
+    <>
+      <div className="terminal">
+        <p className="text-body">
+          {typedText}
+          <span className="cursor">_</span>
+        </p>
+        {showLoading && (
+          <div className="loading-container">
+          <a  className="raise_link"  href="https://github.com/Famelgas/Portfolio" target="_blank" rel="noopener noreferrer">
+            <h1 className="loading-title">GITHUB</h1>
+            <Image name={"loading-logo"} src={require("../github-mark.png")} alt='Logo' />
+          </a>
+          </div>
+          
+        )}
+      </div>
+    </>
   );
 }
 
 
+export default About;
