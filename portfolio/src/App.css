@@ -99,8 +99,196 @@
 }
 
 
-.container {
+.container1 {
     display: grid;
-    grid-template-rows: 100px 100px 100px 100px 100px 100px; 
-    grid-template-columns: 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: repeat(20, 165px);
+    grid-template-columns: repeat(10, 165px);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
+.item1-1 {
+    grid-area: 1 / 1 / 6 / 3;
+}
+
+.photo1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.item1-2 {
+    grid-area: 1 / 10 / 4 / 8;
+}
+
+.photo2 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+.item1-3 {
+    grid-area: 4 / 5 / 7 / 11;
+    background-color: rgba(252, 66, 66, 0.815);
+}
+
+.item1-4 {
+    grid-area: 6 / 1 / 9 / 5;
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-5 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-6 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-7 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-8 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-9 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-10 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-11 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-12 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-13 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-14 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-15 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-16 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-17 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-18 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-19 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item1-20 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+
+.container2 {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px; 
+    grid-template-columns: 100px 100px;
+}
+
+
+.item2-1 {
+    grid-area: 10 / 1 / 20 / 10;
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-2 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-3 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-4 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-5 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-6 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-7 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-8 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-9 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-10 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-11 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-12 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-13 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-14 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-15 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-16 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-17 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-18 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-19 {
+    background-color: rgba(255, 148, 148, 0.815);
+}
+
+.item2-20 {
+    background-color: rgba(255, 148, 148, 0.815);
 }
