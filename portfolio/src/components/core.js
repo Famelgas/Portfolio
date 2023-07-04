@@ -29,7 +29,7 @@ function About() {
       });
 
       if (currentIndex < originalText.length) {
-        setTimeout(addNextCharacter, 5);
+        setTimeout(addNextCharacter, 20);
       }
     };
 
