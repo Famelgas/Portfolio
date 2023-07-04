@@ -1,0 +1,96 @@
+.terminal {
+    font-family: "Lucida Grande", monospace;
+    font-size: 15px;
+    text-align: left;
+    justify-content:center;
+    margin-left: 23%;
+    margin-right: 23%;
+    margin-top: 4%;
+    color: #666464;
+    text-shadow: 1px 1px 1px rgba(88, 87, 87, 0.1);
+  }
+  
+  .text-body {
+    margin: 0;
+  white-space:pre-wrap;
+  margin-right: 23%;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  position: relative;
+  }
+  
+  .cursor {
+    animation: blink 1s infinite;
+    
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  .loading-container {
+    display: flex;
+    align-items: left;
+    justify-content:flex-start;
+    flex-direction: column;
+    height: 100vh;
+    opacity: 0;
+    animation: fade-in 2s ease forwards;
+    margin-top: 30px;
+  }
+  
+  .loading-title {
+    
+    font-size: 24px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-weight:bold;
+    align-items: left;
+    margin-right: 10px;
+  }
+
+  .loading-logo {
+    
+    margin-right: 25px;
+    margin-top: -47px;
+    float: right;
+    width: 30px;
+    height: 30px;       
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-left: auto;
+    animation: fade-in 2s ease forwards;
+    
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 0.8;
+      transform: translateY(0);
+    }
+  }
+  
+
+.raise_link{
+  display: inline-block;
+  text-decoration: none;
+  width: 150px;
+  color: inherit;
+}
+.raise_link:hover,
+.raise_link:focus {
+  box-shadow: 4px 6px 6px  rgba(0, 0, 0, 1) var(--hover);
+  transform: translateY(-0.25em);
+}
