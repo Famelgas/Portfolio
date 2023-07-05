@@ -61,11 +61,11 @@ function App(props) {
 
             <div>
                 {isHomeButtonActive && <Home/>}
-                <p>Home Photo by João Moura</p>
+                
                 {isAboutButtonActive && <About/>}
                 {isPhotosButtonActive &&  <Grid1/>}
             </div>
-            
+            {isHomeButtonActive && <p className='Home-author'>Home Photo by João Moura</p>}
             
           
 
