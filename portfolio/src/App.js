@@ -1,15 +1,17 @@
 
-import About from './components/core.js';
+import About from './components/About.js';
 import {ButtonHome} from './components/Header.js'
 import {ButtonAbout} from './components/Header.js'
 import {ButtonPhotos} from './components/Header.js'
 import React, { useState } from "react";
 import './components/Image.js'
 import './App.css';
-import './Core.css'
-
+import './About.css'
+import './components/Home.js'
+import './Home.css'
 import Grid1 from './components/Grid1.js';
 import Grid2 from './components/Grid2.js';
+import Home from './components/Home.js';
 
 function App(props) {
   const [isHomeButtonActive, setIsHomeButtonActive] = useState(false);
@@ -58,12 +60,18 @@ function App(props) {
             
 
             <div>
-                {isHomeButtonActive && <p>casinha</p>}
+                {isHomeButtonActive && <Home/>}
+                
                 {isAboutButtonActive && <About/>}
                 {isPhotosButtonActive &&  <Grid1/>}
             </div>
+<<<<<<< HEAD
             
              
+=======
+            {isHomeButtonActive && <p className='Home-author'>Home Photo by João Moura</p>}
+            
+>>>>>>> efce0637d33e4cbf11a93b9a10a6eb53e3a493a2
           
 
         </body>
