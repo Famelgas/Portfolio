@@ -1,20 +1,23 @@
-import React, {useState} from "react";
+import React, { useState, useEffect } from "react";
 import '../App.css';
 
 import Image from './Image.js';
 
-function Grid1() {
+
+function Grid1(props) {
     const [showPopup, setShowPopup] = useState(false);
     const [popupImageSrc, setPopupImageSrc] = useState("");
   
     const handleClick = (src) => {
         setShowPopup(true);
         setPopupImageSrc(src);
+        props.onPopupStateChange(true);
     };
   
     const closePopup = () => {
         setShowPopup(false);
         setPopupImageSrc("");
+        props.onPopupStateChange(false);
     };
 
     return(
