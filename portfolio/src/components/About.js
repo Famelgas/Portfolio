@@ -1,7 +1,7 @@
 /* onde se vai inserir codigo da grid entre outras coisas do site*/
 
 import React, { useEffect, useState } from "react";
-import "../Core.css"
+import "../About.css"
 
 
 import Image from "./Image.js"
