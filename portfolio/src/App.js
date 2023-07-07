@@ -65,13 +65,8 @@ function App(props) {
                 {isAboutButtonActive && <About/>}
                 {isPhotosButtonActive &&  <Grid1/>}
             </div>
-<<<<<<< HEAD
-            
-             
-=======
             {isHomeButtonActive && <p className='Home-author'>Home Photo by João Moura</p>}
             
->>>>>>> efce0637d33e4cbf11a93b9a10a6eb53e3a493a2
           
 
         </body>
