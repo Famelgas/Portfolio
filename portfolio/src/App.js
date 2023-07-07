@@ -9,8 +9,7 @@ import './App.css';
 import './About.css'
 import './components/Home.js'
 import './Home.css'
-import Grid1 from './components/Grid1.js';
-import Grid2 from './components/Grid2.js';
+import Grid from './components/Grid.js';
 import Home from './components/Home.js';
 
 function App(props) {
@@ -73,9 +72,8 @@ function App(props) {
 
             <div>
                 {isHomeButtonActive && <Home/>}
-                
                 {isAboutButtonActive && <About/>}
-                {isPhotosButtonActive &&  <Grid1 onPopupStateChange={handlePopupStateChange} />}
+                {isPhotosButtonActive &&  <Grid onPopupStateChange={handlePopupStateChange} />}
             </div>
             {isHomeButtonActive && <p className='Home-author'>Home Photo by João Moura</p>}
             
