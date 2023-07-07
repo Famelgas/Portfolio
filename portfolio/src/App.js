@@ -57,7 +57,7 @@ function App(props) {
         </header>
         <body>
 
-           
+            
 
             <div>
                 {isHomeButtonActive && <Home/>}
