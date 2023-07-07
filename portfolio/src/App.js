@@ -3,7 +3,7 @@ import About from './components/About.js';
 import {ButtonHome} from './components/Header.js'
 import {ButtonAbout} from './components/Header.js'
 import {ButtonPhotos} from './components/Header.js'
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './components/Image.js'
 import './App.css';
 import './About.css'
@@ -16,6 +16,9 @@ function App(props) {
   const [isHomeButtonActive, setIsHomeButtonActive] = useState(false);
   const [isAboutButtonActive, setIsAboutButtonActive] = useState(false);
   const [isPhotosButtonActive, setIsPhotosButtonActive] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+
 
   const handleHomeButtonClick = () => {
     setIsHomeButtonActive(true);
@@ -35,9 +38,18 @@ function App(props) {
     setIsPhotosButtonActive(true);
   };
 
+  const handlePopupStateChange = (popupState) => {
+    setShowPopup(popupState);
+  };
+
+  
+  useEffect(() => {
+    setIsSticky(isPhotosButtonActive && !showPopup);
+  }, [isPhotosButtonActive, showPopup]);
+
   return (
     <div className="App">
-        <header className="App-header">
+        <header className={`App-header ${isSticky ? "sticky" : ""}`}>
             <h1 className='App_title'>PORTFOLIO</h1>
             <div className="header_buttons">
                 <ButtonHome 
@@ -61,7 +73,7 @@ function App(props) {
             <div>
                 {isHomeButtonActive && <Home/>}
                 {isAboutButtonActive && <About/>}
-                {isPhotosButtonActive &&  <Grid/>}
+                {isPhotosButtonActive &&  <Grid onPopupStateChange={handlePopupStateChange} />}
             </div>
             {isHomeButtonActive && <p className='Home-author'>Home Photo by João Moura</p>}
             
