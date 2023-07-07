@@ -55,7 +55,7 @@ function App(props) {
         </header>
         <body>
 
-           
+            
 
             <div>
                 {isHomeButtonActive && <p>casinha</p>}
@@ -63,7 +63,7 @@ function App(props) {
                 {isPhotosButtonActive &&  <Grid1/>}
             </div>
             
-            
+             
           
 
         </body>
