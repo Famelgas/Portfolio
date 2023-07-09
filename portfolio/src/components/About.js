@@ -53,6 +53,13 @@ function About() {
             <h1 className="loading-title">GITHUB</h1>
             <Image name={"loading-logo"} src={require("../github-mark.png")} alt='Logo' />
           </a>
+          <a  className="raise_link"  href="https://github.com/JonnyMoura" target="_blank" rel="noopener noreferrer">
+              @JoaoMoura
+            </a>
+            <a  className="raise_link"  href="https://github.com/Famelgas" target="_blank" rel="noopener noreferrer">
+              @FilipeMendes
+            </a>
+
           </div>
           
         )}
