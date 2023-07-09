@@ -3,8 +3,8 @@
     font-size: 15px;
     text-align: left;
     justify-content:center;
-    margin-left: 23%;
-    margin-right: 23%;
+    margin-left: calc(63% - 40vw); /* Adjust the value as needed */
+    margin-right: calc(63% - 40vw);
     margin-top: 4%;
     color: #666464;
     text-shadow: 1px 1px 1px rgba(88, 87, 87, 0.1);
@@ -93,4 +93,15 @@
 .raise_link:focus {
   box-shadow: 4px 6px 6px  rgba(0, 0, 0, 1) var(--hover);
   transform: translateY(-0.25em);
+}
+
+@media (max-width: 768px) {
+  .terminal {
+    margin-left: 23%;
+    margin-right: 23%;
+  }
+  
+  .text-body {
+    margin-right: 5%;
+  }
 }
