@@ -1,44 +1,39 @@
-
-
 @keyframes showTopText {
   0% {
     transform: translate3d(0, 100%, 0);
-    opacity:0
+    opacity: 0;
   }
   100% {
     transform: translate3d(0, 0, 0);
-    opacity:1
+    opacity: 1;
   }
 }
 
 @keyframes showBottomText {
   0% {
     transform: translate3d(0, -100%, 0);
-    opacity:0
+    opacity: 0;
   }
   100% {
     transform: translate3d(0, 0, 0);
-    opacity:1
+    opacity: 1;
   }
 }
 
 body {
-    text-align: center;
+  text-align: center;
 }
 
 .animated-title {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    height: 160vh; /* Adjust the height as desired */
-    width: 160vh; /* Adjust the width as desired */
-    margin: 10vh auto; /* Adjust the margin as desired */
-    margin-left: 17%;
-    font-family: 'Trebuchet MS', sans-serif;
-    text-shadow:   1px 1px 1px #969393;
- 
-   
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  width: 80vw;
+  margin: 10vh auto;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-shadow: 1px 1px 1px #969393;
 }
 
 .animated-title > div {
@@ -51,22 +46,22 @@ body {
 
 .animated-title > div div {
   justify-content: center;
-  font-size: 20px; /* Adjust the font size as desired */
-  padding: 1vw 0; /* Adjust the padding as desired */
+  font-size: 20px;
+  padding: 1vw 0;
 }
 
 .animated-title > div.text-top {
-  position: relative; /* Added position relative */
+  position: relative;
 }
 
 .animated-title > div.text-top::after {
-  content: ""; /* Added content */
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 0.2vw; /* Adjust the height as desired */
-  background-color: #000; /* Adjust the background color as desired */
+  height: 0.2vw;
+  background-color: #000;
   animation: showBottomBorder 1s;
   animation-fill-mode: forwards;
 }
@@ -83,12 +78,12 @@ body {
 .animated-title > div.text-top div {
   animation: showTopText 2s;
   animation-fill-mode: forwards;
-  display: flex; /* Added */
-  flex-wrap: wrap; /* Added */
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .animated-title > div.text-bottom {
-  border-top: 0.2vw solid #000; /* Adjust the border size as desired */
+  border-top: 0.2vw solid #000;
   margin-top: 4%;
 }
 
@@ -101,28 +96,30 @@ body {
   opacity: 0;
   transition: opacity 1s ease;
   position: relative;
-  margin: 4% auto; /* Adjust the margin as desired */
+  margin: 4% auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px; /* Set the width of the container */
-  height: 300px;
-  
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  overflow: hidden;
 }
 
 .image-container .image {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .image-container .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-  border: 1px 1px solid rgba(0, 0, 0, 0.1); /* Adjust the border color and opacity as desired */
-  border-radius: 5px; /* Adjust the border radius as desired */
+  object-fit: contain;
+  object-position: center center;
+  border: 1px 1px  solid rgba(0, 0, 0, 0.1);
+  border-radius: 10%;
+  
   filter: grayscale(100%);
   cursor: pointer;
 }
@@ -131,14 +128,28 @@ body {
   opacity: 1;
 }
 
-
 .text-top {
   display: flex;
   align-items: center;
   float: right;
   justify-content: flex-end;
-  padding-right: 10%; /* Adjust the padding as desired */
+  padding-right: 10%;
   margin-top: 4%;
 }
 
+@media (max-width: 768px) {
+  .animated-title {
+    height: 80vh;
+    width: 80vw;
+    margin: 5vh auto;
+  }
 
+  .animated-title > div div {
+    font-size: 16px;
+  }
+
+  .image-container {
+    width: 80%;
+    max-width: 200px;
+  }
+}
