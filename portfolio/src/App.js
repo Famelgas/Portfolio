@@ -5,10 +5,10 @@ import {ButtonAbout} from './components/Header.js'
 import {ButtonPhotos} from './components/Header.js'
 import React, { useState, useEffect } from "react";
 import './components/Image.js'
-import './App.css';
-import './About.css'
+import './css/App.css';
+import './css/About.css'
+import './css/Home.css'
 import './components/Home.js'
-import './Home.css'
 import Grid from './components/Grid.js';
 import Home from './components/Home.js';
 
