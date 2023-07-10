@@ -13,7 +13,7 @@ import Grid from './components/Grid.js';
 import Home from './components/Home.js';
 
 function App(props) {
-  const [isHomeButtonActive, setIsHomeButtonActive] = useState(false);
+  const [isHomeButtonActive, setIsHomeButtonActive] = useState(true);
   const [isAboutButtonActive, setIsAboutButtonActive] = useState(false);
   const [isPhotosButtonActive, setIsPhotosButtonActive] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
