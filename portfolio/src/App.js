@@ -67,18 +67,12 @@ function App(props) {
             </div>
         </header>
         <body>
-
-            
-
             <div>
                 {isHomeButtonActive && <Home/>}
                 {isAboutButtonActive && <About/>}
                 {isPhotosButtonActive &&  <Grid onPopupStateChange={handlePopupStateChange} />}
             </div>
             {isHomeButtonActive && <p className='Home-author'>Home Photo by João Moura</p>}
-            
-          
-
         </body>
     </div>
     
