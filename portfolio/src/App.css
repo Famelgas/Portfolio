@@ -1,57 +1,53 @@
-
-
-
-
-
 .App {
     text-align: center;
-  }
-  
-  .Home-author {
+}
+
+.Home-author {
     font-family: "Gill Sans", sans-serif;
     color: #040404;
     font-weight: 500;
     text-shadow: 2px 2px 4px rgba(88, 87, 87, 0.3);
-  }
-  
-  .App-header {
-    background-color: transparent;
+}
+
+.App-header {
+    background-color: white;
     min-height: 0;
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  .App-header.sticky {
+    box-shadow: 0px 0px 10px 10px #fff;
+}
+
+.App-header.sticky {
     position: sticky;
     top: 0;
     z-index: 9999;
-  }
-  
-  .App_title {
+}
+
+.App_title {
     font-family: "Gill Sans", sans-serif;
     font-size: 48px;
     font-weight: 750;
     letter-spacing: 3px;
     color: #040404;
     text-shadow: 2px 2px 4px rgba(88, 87, 87, 0.3);
-  }
-  
-  .raise:hover,
-  .raise:focus {
+}
+
+.raise:hover,
+.raise:focus {
     box-shadow: 4px 6px 6px rgba(0, 0, 0, 1) var(--hover);
     transform: translateY(-0.25em);
-  }
-  
-  .header_buttons {
+}
+
+.header_buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .header_buttons button {
+}
+
+.header_buttons button {
     /* Existing button styles */
     background-color: transparent;
     box-shadow: 5px 6px 5px rgba(181, 180, 180, 0.7);
@@ -69,14 +65,15 @@
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-  }
-  
-  .header_buttons button.clicked {
+    margin-bottom: 30px;
+}
+
+.header_buttons button.clicked {
     /* Button styles when clicked */
     color: #fff;
-  }
-  
-  .header_buttons button::after {
+}
+
+.header_buttons button::after {
     /* Overlay styles */
     content: "";
     position: absolute;
@@ -91,36 +88,37 @@
     background: radial-gradient(circle at center, #000 24%, #000 25%, #000 100%);
     opacity: 0;
     pointer-events: none;
-  }
-  
-  .header_buttons button.clicked::after {
+}
+
+.header_buttons button.clicked::after {
     /* Overlay styles when button is clicked */
     opacity: 1;
     transform: scale(4.2);
-  }
-  
-  .header_buttons button.clicked:hover::after,
-  .header_buttons button.clicked:focus::after {
+    top: 0;
+}
+
+.header_buttons button.clicked:hover::after,
+.header_buttons button.clicked:focus::after {
     /* Overlay styles when button is clicked and hovered or focused */
     transform: scale(4.2);
-  }
-  
-  .header_buttons button:not(.clicked):hover,
-  .header_buttons button:not(.clicked):focus {
+}
+
+.header_buttons button:not(.clicked):hover,
+.header_buttons button:not(.clicked):focus {
     /* Button styles when not clicked but hovered or focused */
     box-shadow: 4px 3px 0.5em -0.4em rgba(0, 0, 0, 0.3);
     transform: translateY(-0.25em);
-  }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 768px) {
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
     .header_buttons button {
-      width: 150px;
-      margin-right: 10px;
-      margin-left: 10px;
+        width: 150px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
-  }
-  
+}
+
 body {
     margin: 20px;
     padding: 0;
@@ -274,6 +272,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: 100;
+    animation: show-photos 0.3s linear;
 }
 
 .popup span {

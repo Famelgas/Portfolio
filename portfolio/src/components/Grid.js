@@ -79,10 +79,6 @@ function Grid(props) {
 
         </div>
 
-        
-    
-        
-
     )
 }
 
