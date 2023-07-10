@@ -74,6 +74,7 @@
 .header_buttons button.clicked {
     /* Button styles when clicked */
     color: #fff;
+    background-color: #000;
 }
 
 .header_buttons button::after {
@@ -91,13 +92,17 @@
     background: radial-gradient(circle at center, #000 24%, #000 25%, #000 100%);
     opacity: 0;
     pointer-events: none;
+    background-color: #000;
+    
 }
 
 .header_buttons button.clicked::after {
     /* Overlay styles when button is clicked */
     opacity: 1;
     transform: scale(4.2);
-    top: 0;
+    background-color: #000;
+   
+   
 }
 
 .header_buttons button.clicked:hover::after,
