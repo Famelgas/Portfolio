@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Cabin|Cabin+Sketch:700);
 
 body {
     margin: 20px;
@@ -46,6 +47,7 @@ body {
     left: 85%;
     transform: translate(-50%, -50%);
     color: #fff;
+    font-family: 'Cabin';
     font-size: 10px;
     font-weight: 700;
     pointer-events: none;
@@ -159,6 +161,7 @@ body {
     position: absolute;
     top: 0;
     right: 10px;
+    font-family: 'Cabin';
     font-size: 30px;
     font-weight: bolder;
     color: #fff;

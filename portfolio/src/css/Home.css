@@ -1,3 +1,8 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans|Cabin|Cabin+Sketch:700);
+
+
+
+
 @keyframes showTopText {
     0% {
         transform: translate3d(0, 100%, 0);
@@ -32,7 +37,7 @@ body {
     height: 50vh;
     width: 80vw;
     margin: 10vh auto;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Cabin';
     text-shadow: 1px 1px 1px #969393;
 }
 
