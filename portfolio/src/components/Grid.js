@@ -306,11 +306,6 @@ function Grid(props) {
                 </div>
             </div>
 
-
-
-            /**
-             * Imagem ampliada quando clicada
-             */
             {showPopup && (
                 <div className="popup">
                     <span onClick={closePopup}>&times;</span>
