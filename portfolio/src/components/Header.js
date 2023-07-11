@@ -5,13 +5,13 @@ import { useState } from 'react';
 export function ButtonHome({ isActive, onClick }) {
   const [buttonClicked, setButtonClicked] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = () => {//Regressa sempre ao topo
     setButtonClicked(true);
     window.scrollTo({
       top: 0,
     });
 
-    // Call the onClick function passed as a prop
+   
     if (onClick) {
       onClick();
     }
@@ -45,14 +45,14 @@ export function ButtonAbout({ isActive, onClick }) {
 export function ButtonPhotos({ isActive, onClick }) {
   const [buttonClicked, setButtonClicked] = useState(false);
 
-  const handleClick = () => {
+  const handleClick = () => { //regressa sempre ao topo
     setButtonClicked(true);
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
 
-    // Call the onClick function passed as a prop
+   
     if (onClick) {
       onClick();
     }

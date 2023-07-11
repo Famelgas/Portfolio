@@ -11,12 +11,12 @@ function About() {
   const [typedText, setTypedText] = useState("");
   const [showLoading, setShowLoading] = useState(false);
   const originalText =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis gravida nisl. Aliquam tempor accumsan eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc mauris risus, dictum ut ex bibendum, pharetra egestas sapien. Nunc bibendum mauris ac venenatis rhoncus. Proin sollicitudin est sit amet lacus euismod tempor. Nulla scelerisque imperdiet porta. Quisque id nibh magna. Suspendisse cursus feugiat nibh vitae vulputate. Vivamus mauris est, varius a placerat ac, blandit sed sem. In cursus commodo nunc, vitae porta mauris euismod nec";
+    "Este Website foi realizado com objetivo de apresentar o nosso portfolio para o Mestrado de Design e Multimedia. Aqui são encontradas uma seleção de fotos de ambos os autores que se unem não só pela cidade de Coimbra mas por todos os locais que fizeram a jornada até este ponto em que apresentamos a candidatura. Em baixo encontram-se as páginas de GitHub de cada um dos autores e o código-fonte deste Website. A foto utilizada na homepage foi tirada por João Moura. Obrigado pela atenção. \"É preciso passar sobre ruínas, Como quem vai pisando um chão de flores!\" - Antero de Quental"
 
   useEffect(() => {
     let currentIndex = 0;
 
-    const addNextCharacter = () => {
+    const addNextCharacter = () => {  //adicionar caracter um a um para atingir efeito tipo terminal
       setTypedText((prevTypedText) => {
         const nextCharacter = originalText[currentIndex];
         currentIndex++;
@@ -29,7 +29,7 @@ function About() {
       });
 
       if (currentIndex < originalText.length) {
-        setTimeout(addNextCharacter, 20);
+        setTimeout(addNextCharacter, 10);
       }
     };
 
