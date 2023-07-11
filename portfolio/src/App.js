@@ -49,6 +49,7 @@ function App(props) {
 
   return (
     <div className="App">
+       
         <header className={`App-header ${isSticky ? "sticky" : ""}`}>
             <h1 className='App_title'>PORTFOLIO</h1>
             <div className="header_buttons">
