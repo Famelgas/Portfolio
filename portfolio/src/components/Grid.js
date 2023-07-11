@@ -3,7 +3,14 @@ import '../css/Grid.css';
 
 import Image from './Image.js';
 
-
+/**
+ * Grid assimétrica que mostra as fotografias
+ * O container global é a grid, os containers gallery-container definem os espaços das fotos,
+ * os containers gallery tratam dos clicks sobre as imagens
+ * 
+ * @param {*} props 
+ * @returns 
+ */
 function Grid(props) {
     const [showPopup, setShowPopup] = useState(false);
     const [popupImageSrc, setPopupImageSrc] = useState("");
@@ -299,6 +306,11 @@ function Grid(props) {
                 </div>
             </div>
 
+
+
+            /**
+             * Imagem ampliada quando clicada
+             */
             {showPopup && (
                 <div className="popup">
                     <span onClick={closePopup}>&times;</span>

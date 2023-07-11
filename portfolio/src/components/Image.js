@@ -1,5 +1,6 @@
-/* onde se vai inserir codigo da grid entre outras coisas do site*/
-/* o essencial por assim dizer*/
+/**
+ * Image é uma classe que apenas renderiza as imagens que são colocadas na grid e na home page
+ */
 
 import React, {Component} from 'react';
 
