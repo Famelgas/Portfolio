@@ -12,7 +12,7 @@ import './components/Home.js'
 import Grid from './components/Grid.js';
 import Home from './components/Home.js';
 
-function App(props) {
+function App(props) {/* Guardar o estado de cada botão*/
   const [isHomeButtonActive, setIsHomeButtonActive] = useState(true);
   const [isAboutButtonActive, setIsAboutButtonActive] = useState(false);
   const [isPhotosButtonActive, setIsPhotosButtonActive] = useState(false);
