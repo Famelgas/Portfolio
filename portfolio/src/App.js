@@ -5,10 +5,10 @@ import {ButtonAbout} from './components/Header.js'
 import {ButtonPhotos} from './components/Header.js'
 import React, { useState, useEffect } from "react";
 import './components/Image.js'
-import './App.css';
-import './About.css'
+import './css/App.css';
+import './css/About.css'
+import './css/Home.css'
 import './components/Home.js'
-import './Home.css'
 import Grid from './components/Grid.js';
 import Home from './components/Home.js';
 
@@ -72,7 +72,6 @@ function App(props) {
                 {isAboutButtonActive && <About/>}
                 {isPhotosButtonActive &&  <Grid onPopupStateChange={handlePopupStateChange} />}
             </div>
-            {isHomeButtonActive && <p className='Home-author'>Home Photo by João Moura</p>}
         </body>
     </div>
     

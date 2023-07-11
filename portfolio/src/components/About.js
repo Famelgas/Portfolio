@@ -1,7 +1,7 @@
 
 
 import React, { useEffect, useState } from "react";
-import "../About.css"
+import "../css/About.css"
 
 
 import Image from "./Image.js"
