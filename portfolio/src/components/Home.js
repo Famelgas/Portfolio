@@ -9,25 +9,25 @@ function Home() {
   const [isTextTopLoaded, setIsTextTopLoaded] = useState(false);
 
   useEffect(() => {
-    // Simulating bottom text loading
+    // Simula o bottomText a carregar
     setTimeout(() => {
       setIsTextBottomLoaded(true);
     }, 0);
 
-    // Simulating bottom border loading after bottom text loaded
+    // Simula borda de baixo a carregar após texto
     setTimeout(() => {
       setIsBottomBorderShown(true);
-    }, 2000); // Increased delay to make it appear after text bottom
+    }, 2000); // Delay para carregar no momento certo
 
-    // Simulating image loading after bottom border loaded
+    // Simula imagem carregar depois do texto
     setTimeout(() => {
       setIsImageLoaded(true);
-    }, 2500); // Increased delay to make it slower
+    }, 2500); 
 
-    // Simulating top text loading after image and bottom border loaded
+    // Simula o top text ser carregado após imagem e bottom text
     setTimeout(() => {
       setIsTextTopLoaded(true);
-    }, 8000); // Increased delay to make it appear after image and bottom border
+    }, 8000); // Delay para carregar no momento certo
   }, []);
 
   return (

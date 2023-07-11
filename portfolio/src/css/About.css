@@ -1,11 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans|Cabin|Cabin+Sketch:700);
 
+
+/* Estilo do texto*/
 .terminal {
     font-family: 'Cabin';
     font-size: 15px;
     text-align: left;
     justify-content:center;
-    margin-left: calc(63% - 40vw); /* Adjust the value as needed */
+    margin-left: calc(63% - 40vw); 
     margin-right: calc(63% - 40vw);
     margin-top: 4%;
     color: #666464;
@@ -83,6 +85,7 @@
     }
 }
 
+/*Efeitos para os links githubs*/
 
 .raise_link{
     display: inline-block;
