@@ -38,7 +38,7 @@ function Home() {
       <div className={`image-container ${isImageLoaded ? "loaded" : ""}`}>
         <Image
           name={"home-photo"}
-          src={require("../images/IMG_0937.jpg")}
+          src={require("../images/filipe/photo5.jpg")}
           alt="Home-photo"
         />
       </div>
